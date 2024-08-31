@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#section1-heads {
+  display: flex;
+}
+
+#section2-tails {
+  display: flex;
+}
+
+#heads {
+  width: 150px;
+  height: 100px;
+}
+
+#tails {
+  width: 150px;
+  height: 100px;
+}
