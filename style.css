@@ -1,9 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
 body {
   background-color: khaki;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -12,25 +17,33 @@ h1 {
   font-style: normal;
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-}
-
-#container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  height: 100vh;
+  padding-top: 50px;
 }
 
 .heads {
   width: 120px;
   height: 100px;
   cursor: pointer;
+  margin-right: 30px;
+  background-color: rgb(215, 70, 70);
+  /* text-decoration: ; */
 }
 
 .tails {
   width: 120px;
   height: 100px;
   cursor: pointer;
+  margin-left: 30px;
+  background-color: rgb(215, 70, 70);
 }
+
+.gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* i {
+  padding-left: 20px;
+} */
