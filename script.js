@@ -1,16 +1,21 @@
-// let player = prompt("HEADS OR TAILS?").toLocaleUpperCase();
-const move = ["heads", "tails"];
-let adversary = move[Math.trunc(Math.random() * move.length)].toUpperCase();
+const move = ["HEADS", "TAILS"];
+let adversary = move[Math.trunc(Math.random() * move.length)];
 
-if (player === adversary) {
-  console.log(`WIN! IT'S ${adversary}`);
-} else {
-  player !== adversary;
-  console.log(`LOSE! IT'S ${adversary}`);
-}
+const headsBTN = document.querySelector(".heads");
+const tailsBTN = document.querySelector(".tails");
 
-const headsBTN = document.getElementById(".heads");
-const tailsBTN = document.getElementById(".tails");
+headsBTN.addEventListener("click", function () {
+  if ("heads" === adversary) {
+    alert(`WIN! IT'S ${adversary} 😁`);
+  } else {
+    alert(`LOSE! IT'S ${adversary} 😰`);
+  }
+});
 
-const clickHeads = headsBTN.addEventListener("click", function () {});
-const clickTails = tailsBTN.addEventListener("click", function () {});
+tailsBTN.addEventListener("click", function () {
+  if ("tails" === adversary) {
+    alert(`WIN! IT'S ${adversary} 😁`);
+  } else {
+    alert(`LOSE! IT'S ${adversary} 😰`);
+  }
+});
